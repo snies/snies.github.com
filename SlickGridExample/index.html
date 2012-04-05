@@ -13,19 +13,7 @@ http://mleibman.github.com/SlickGrid/examples/example1-simple.html -->
 <body>
     <img src="http://www.un.org/Depts/rcnyo/flat041.gif" />
     <button id="button";type="button">Click Me!</button>
-<table width="100%">
-  <tr>
-    <td valign="top" width="50%">
-      <div id="myGrid" style="width:600px;height:500px;"></div>
-    </td>
-    <td valign="top">
-      <h2>Demonstrates:</h2>
-      <ul>
-        <li>basic grid with minimal configuration</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+    <div id="myGrid" style="width:600px;height:500px;"></div>
 
 <script src="js/jquery-1.7.min.js"></script>
 <script src="js/jquery.event.drag-2.0.min.js"></script>
@@ -53,7 +41,7 @@ var grid;
     {id: "%", name: "% Complete", field: "percentComplete"},
     {id: "start", name: "Start", field: "start"},
     {id: "finish", name: "Finish", field: "finish"},
-      {id: "effort-driven", name: "Effort Driven", cssClass: "column-effort-driven", field: "effortDriven", formatter: myformatter}
+    {id: "effort-driven", name: "Effort Driven", cssClass: "column-effort-driven", field: "effortDriven", formatter: myformatter}
   ];
 
   var options = {
